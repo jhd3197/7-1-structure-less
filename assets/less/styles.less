@@ -1,0 +1,71 @@
+/**
+* MAIN.LESS is the entry point of all components and includes
+**/
+
+/* 
+Order of loading:
+    abstracts/
+    vendors/
+    base/
+    layout/
+    components/
+    pages/
+*/
+
+// Load Abstracts
+@import "abstracts/variables"; // Variables are located
+
+// Load base
+@import "base/resets";          // CSS resets are located ( i.e body { margin: 0 } )
+@import "base/typography";      // Typography is initially styled
+
+// Load layout
+@import "layout/menu";        // Header and nav styles
+@import "layout/section";        // Footer styles
+@import "layout/footer";        // Footer styles
+
+// Load components
+@import "components/_buttons";
+
+// Load partials
+@import "partials/example-cta"; // Example partial styles
+
+// Load pages
+@import "pages/home";       // Homepage specific styles
+
+// Load Responsive stylesheet
+@import "responsive";
+
+
+/***
+For larger projects, copy the responsive breakpoints below into all pages/layouts/partials
+to create a managable development experience.
+
+Use reponsive.less if your project is smaller or doesn't require many responsive styles. It is always recommended to
+do the larger project approach.
+***/
+
+/* Copy the responsive breakpoints below into your less files: (You can find the responsive breakpoint variables inside abstracts/variables.less)
+
+////////////////////////////////////
+/////////////RESPONSIVE/////////////
+////////////////////////////////////
+.page.name {
+
+// XL breakpoint
+@media (max-width: @xl-breakpoint) {}
+
+// LG breakpoint
+@media (max-width: @lg-breakpoint) {}
+
+// MD breakpoint
+@media (max-width: @md-breakpoint) {}
+
+// SM breakpoint
+@media (max-width: @sm-breakpoint) {}
+
+// XS  breakpoint
+@media (max-width: @xs-breakpoint) {}
+}
+
+*/

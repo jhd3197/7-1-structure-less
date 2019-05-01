@@ -1,0 +1,167 @@
+/**
+* MAIN.LESS is the entry point of all components and includes
+**/
+/* 
+Order of loading:
+    abstracts/
+    vendors/
+    base/
+    layout/
+    components/
+    pages/
+*/
+/**
+* Variables for simple theming go here
+**/
+body,
+html {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  font-family: 'Open-sans', helvetica, arial, sans-serif;
+}
+/*** Default rules for fonts ***/
+/*
+h1 {
+    font-size: 2.5em;
+    font-family: @header-font;
+}
+h2 {
+    font-size: 2em;
+    font-family: @header-font;
+}
+h3 {
+    font-size: 1.75em;
+    font-family: @header-font;
+}
+h4 {
+    font-size: 1.5em;
+    font-family: @header-font;
+}
+h5 {
+    font-size: 1.25em;
+    font-family: @header-font;
+}
+h6 {
+    font-size: 1em;
+    font-family: @header-font;
+}
+a {
+    text-decoration: none;
+}
+
+.text-gradient {
+    text-transform: uppercase;
+    font-family: @header-font;
+    font-weight: bold;
+    font-size: 4em;
+    margin: 8px 0px 12px;
+    position: relative;
+    line-height: 4em;
+    background: -webkit-linear-gradient(top, #00b2be 1%, #2facb5 20%, #0097a8 61%, #007c90 100%);
+    color: #00a0af;
+}
+*/
+/* for demo puroses only, remove this variable, 
+this should be in /less/abstracts/variables.less 
+-------------------------------------------------- */
+/* end demo var */
+/* new bootstrap 4 menu */
+nav.navbar {
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+}
+/* MEGAMENU STYLE
+-------------------------------------------------- */
+.navbar.megamenu .nav,
+.navbar.megamenu .collapse,
+.navbar.megamenu .dropup,
+.navbar.megamenu .dropdown {
+  position: static;
+}
+.navbar.megamenu .container {
+  position: relative;
+}
+.navbar.megamenu .dropdown-menu {
+  left: auto;
+}
+.navbar.megamenu .megamenu-content {
+  padding: 15px;
+}
+.navbar.megamenu .megamenu-content {
+  margin-top: 0;
+  color: #212529;
+}
+.navbar.megamenu .megamenu-content a {
+  color: inherit;
+}
+.navbar.megamenu .dropdown.megamenu-fw .dropdown-menu {
+  left: 0;
+  right: 0;
+}
+.partial.example-cta {
+  padding: 2rem;
+  margin: 2rem 0;
+  background: linear-gradient(to right, #c94b4b, #4b134f);
+  color: white;
+}
+.page.home .test {
+  color: red;
+}
+/* Use bottom breakpoints if site is large */
+/* 
+.page.home {
+
+// XL breakpoint
+@media (max-width: @xl-breakpoint) {}
+
+// LG breakpoint
+@media (max-width: @lg-breakpoint) {}
+
+// MD breakpoint
+@media (max-width: @md-breakpoint) {}
+
+// SM breakpoint
+@media (max-width: @sm-breakpoint) {}
+
+// XS  breakpoint
+@media (max-width: @xs-breakpoint) {}
+
+}
+*/
+/***
+For larger projects, copy the responsive breakpoints below into all pages/layouts/partials
+to create a managable development experience.
+
+Use reponsive.less if your project is smaller or doesn't require many responsive styles. It is always recommended to
+do the larger project approach.
+***/
+/* Copy the responsive breakpoints below into your less files: (You can find the responsive breakpoint variables inside abstracts/variables.less)
+
+////////////////////////////////////
+/////////////RESPONSIVE/////////////
+////////////////////////////////////
+.page.name {
+
+// XL breakpoint
+@media (max-width: @xl-breakpoint) {}
+
+// LG breakpoint
+@media (max-width: @lg-breakpoint) {}
+
+// MD breakpoint
+@media (max-width: @md-breakpoint) {}
+
+// SM breakpoint
+@media (max-width: @sm-breakpoint) {}
+
+// XS  breakpoint
+@media (max-width: @xs-breakpoint) {}
+}
+
+*/
